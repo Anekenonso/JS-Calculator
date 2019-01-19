@@ -7,3 +7,7 @@ Goals:
 
 
 1.18.20
+All code is up for refactoring or touch ups
+orderOfOperations has a flaw where only it adds and nothing else need to check if loop is wrong or rework entire function
+cick evt needs to be coded up still
+and UI needs to be done as well
