@@ -51,6 +51,8 @@ function clear(){
   return document.querySelector(".calculator__screen").textContent="";
 }
 function orderOfOperations(arr,screen){
+  // if flag value is true then runs operations
+  // ideally wants to do first inputted operator 
   for(let ops in operation){
     if(!operation[ops]){
       return;
@@ -67,6 +69,9 @@ function orderOfOperations(arr,screen){
 }
 function operate(operator,screen,arr){
   let value = parseInt(screen.textContent) // converts string into Integar
+
+  // can be altered may not be fully functional
+  // checks to see what the operator text content is and changes flag value 
   switch (operator.textContent) {
     case "+":
       operation.add = true;
@@ -98,3 +103,5 @@ function operate(operator,screen,arr){
       break;
   }
 }
+// need click evt incase user clicks instead of keypress
+// and need to style both keypress and click for the ui to indicate user input
